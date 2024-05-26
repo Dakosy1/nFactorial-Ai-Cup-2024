@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0DF03A2BFB982600BBE21C /* FlipCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0DF0392BFB982600BBE21C /* FlipCardViewModel.swift */; };
+		3D60AAFF2BFBC81800507C3F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3D60AAFE2BFBC81800507C3F /* FirebaseAuth */; };
+		3D60AB012BFBC81800507C3F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3D60AB002BFBC81800507C3F /* FirebaseFirestore */; };
+		3D60AB0F2BFBD09400507C3F /* ContentViewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60AB0E2BFBD09400507C3F /* ContentViewLogin.swift */; };
+		3D60AB142BFBD15600507C3F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60AB132BFBD15600507C3F /* LoginView.swift */; };
+		3D7A0FD92BE3A9E30054ED43 /* Diploma_ITStepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FD82BE3A9E30054ED43 /* Diploma_ITStepApp.swift */; };
+		3D7A0FDB2BE3A9E30054ED43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FDA2BE3A9E30054ED43 /* ContentView.swift */; };
+		3D7A0FDD2BE3A9E50054ED43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A0FDC2BE3A9E50054ED43 /* Assets.xcassets */; };
+		3D7A0FE02BE3A9E50054ED43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A0FDF2BE3A9E50054ED43 /* Preview Assets.xcassets */; };
+		3D7A0FE72BE3B0540054ED43 /* HomeLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FE62BE3B0540054ED43 /* HomeLearning.swift */; };
+		3D7A0FE92BE3B0610054ED43 /* LearningAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FE82BE3B0610054ED43 /* LearningAlphabet.swift */; };
+		3D7A0FEB2BE3B06D0054ED43 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FEA2BE3B06D0054ED43 /* Profile.swift */; };
+		3D7A0FF22BE413670054ED43 /* Chapter1_Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A0FF12BE413670054ED43 /* Chapter1_Hello.swift */; };
+		3D93BCE22BF4FA9600AD2DDF /* AnkiFlashCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCE12BF4FA9600AD2DDF /* AnkiFlashCards.swift */; };
+		3D93BCE82BF4FD9B00AD2DDF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D93BCE72BF4FD9B00AD2DDF /* RealmSwift */; };
+		3D93BCE92BF4FD9B00AD2DDF /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3D93BCE72BF4FD9B00AD2DDF /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3D93BCEE2BF4FE6100AD2DDF /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCED2BF4FE6100AD2DDF /* RealmModel.swift */; };
+		3D93BCF02BF4FF3600AD2DDF /* FlashcardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCEF2BF4FF3600AD2DDF /* FlashcardStore.swift */; };
+		3D93BCF22BF5005700AD2DDF /* ModuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCF12BF5005700AD2DDF /* ModuleStore.swift */; };
+		3D93BCF42BF5006E00AD2DDF /* NewModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCF32BF5006E00AD2DDF /* NewModuleView.swift */; };
+		3D93BCF62BF500C700AD2DDF /* ModuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCF52BF500C700AD2DDF /* ModuleDetailView.swift */; };
+		3D93BCF82BF500E500AD2DDF /* NewFlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCF72BF500E500AD2DDF /* NewFlashCardView.swift */; };
+		3D93BCFA2BF5151100AD2DDF /* FlashCardLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCF92BF5151100AD2DDF /* FlashCardLearningView.swift */; };
+		3D93BCFC2BF5451300AD2DDF /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93BCFB2BF5451300AD2DDF /* QuizView.swift */; };
+		3DD621C12C01B35800F0E864 /* TTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD621C02C01B35800F0E864 /* TTP.swift */; };
+		3DD621C32C01BA1700F0E864 /* ttpapi-424405-79c8257556e2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DD621C22C01BA1700F0E864 /* ttpapi-424405-79c8257556e2.json */; };
+		3DD621C52C01CFF100F0E864 /* ChatBotAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD621C42C01CFF100F0E864 /* ChatBotAIView.swift */; };
+		3DD621EE2C02935300F0E864 /* ChatBotAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD621ED2C02935300F0E864 /* ChatBotAI.swift */; };
+		3DD621F12C02939900F0E864 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD621F02C02939900F0E864 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D93BCEA2BF4FD9B00AD2DDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D93BCE92BF4FD9B00AD2DDF /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D0DF0392BFB982600BBE21C /* FlipCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardViewModel.swift; sourceTree = "<group>"; };
+		3D60AB0E2BFBD09400507C3F /* ContentViewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewLogin.swift; sourceTree = "<group>"; };
+		3D60AB132BFBD15600507C3F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3D7A0FD52BE3A9E30054ED43 /* Diploma_ITStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diploma_ITStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7A0FD82BE3A9E30054ED43 /* Diploma_ITStepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diploma_ITStepApp.swift; sourceTree = "<group>"; };
+		3D7A0FDA2BE3A9E30054ED43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D7A0FDC2BE3A9E50054ED43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D7A0FDF2BE3A9E50054ED43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D7A0FE62BE3B0540054ED43 /* HomeLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLearning.swift; sourceTree = "<group>"; };
+		3D7A0FE82BE3B0610054ED43 /* LearningAlphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAlphabet.swift; sourceTree = "<group>"; };
+		3D7A0FEA2BE3B06D0054ED43 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3D7A0FF12BE413670054ED43 /* Chapter1_Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1_Hello.swift; sourceTree = "<group>"; };
+		3D93BCE12BF4FA9600AD2DDF /* AnkiFlashCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiFlashCards.swift; sourceTree = "<group>"; };
+		3D93BCED2BF4FE6100AD2DDF /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		3D93BCEF2BF4FF3600AD2DDF /* FlashcardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStore.swift; sourceTree = "<group>"; };
+		3D93BCF12BF5005700AD2DDF /* ModuleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStore.swift; sourceTree = "<group>"; };
+		3D93BCF32BF5006E00AD2DDF /* NewModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModuleView.swift; sourceTree = "<group>"; };
+		3D93BCF52BF500C700AD2DDF /* ModuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetailView.swift; sourceTree = "<group>"; };
+		3D93BCF72BF500E500AD2DDF /* NewFlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFlashCardView.swift; sourceTree = "<group>"; };
+		3D93BCF92BF5151100AD2DDF /* FlashCardLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardLearningView.swift; sourceTree = "<group>"; };
+		3D93BCFB2BF5451300AD2DDF /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		3DD621C02C01B35800F0E864 /* TTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTP.swift; sourceTree = "<group>"; };
+		3DD621C22C01BA1700F0E864 /* ttpapi-424405-79c8257556e2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ttpapi-424405-79c8257556e2.json"; sourceTree = "<group>"; };
+		3DD621C42C01CFF100F0E864 /* ChatBotAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAIView.swift; sourceTree = "<group>"; };
+		3DD621ED2C02935300F0E864 /* ChatBotAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D7A0FD22BE3A9E30054ED43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D93BCE82BF4FD9B00AD2DDF /* RealmSwift in Frameworks */,
+				3DD621F12C02939900F0E864 /* Alamofire in Frameworks */,
+				3D60AAFF2BFBC81800507C3F /* FirebaseAuth in Frameworks */,
+				3D60AB012BFBC81800507C3F /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D0DF0152BFB918400BBE21C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FDA2BE3A9E30054ED43 /* ContentView.swift */,
+				3D7A0FE62BE3B0540054ED43 /* HomeLearning.swift */,
+				3DD621ED2C02935300F0E864 /* ChatBotAI.swift */,
+				3D7A0FEA2BE3B06D0054ED43 /* Profile.swift */,
+				3DD621C42C01CFF100F0E864 /* ChatBotAIView.swift */,
+				3D7A0FF12BE413670054ED43 /* Chapter1_Hello.swift */,
+				3DD621C02C01B35800F0E864 /* TTP.swift */,
+				3D93BCE12BF4FA9600AD2DDF /* AnkiFlashCards.swift */,
+				3D93BCFB2BF5451300AD2DDF /* QuizView.swift */,
+				3D93BCF72BF500E500AD2DDF /* NewFlashCardView.swift */,
+				3D93BCF92BF5151100AD2DDF /* FlashCardLearningView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D0DF0162BFB91BD00BBE21C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FE82BE3B0610054ED43 /* LearningAlphabet.swift */,
+				3D93BCF32BF5006E00AD2DDF /* NewModuleView.swift */,
+				3D0DF0392BFB982600BBE21C /* FlipCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D0DF0172BFB91EF00BBE21C /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D93BCF12BF5005700AD2DDF /* ModuleStore.swift */,
+				3D93BCF52BF500C700AD2DDF /* ModuleDetailView.swift */,
+				3D93BCEF2BF4FF3600AD2DDF /* FlashcardStore.swift */,
+				3D93BCED2BF4FE6100AD2DDF /* RealmModel.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3D60AB082BFBCEC400507C3F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D60AB092BFBCEED00507C3F /* App */,
+				3D60AB0A2BFBCEFA00507C3F /* Components */,
+				3D60AB0B2BFBCF0500507C3F /* Core  */,
+				3D60AB0C2BFBCF0D00507C3F /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D60AB092BFBCEED00507C3F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FD82BE3A9E30054ED43 /* Diploma_ITStepApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D60AB0A2BFBCEFA00507C3F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3D60AB0B2BFBCF0500507C3F /* Core  */ = {
+			isa = PBXGroup;
+			children = (
+				3D60AB102BFBD0B500507C3F /* Authentification */,
+				3D60AB112BFBD10100507C3F /* Profile */,
+				3D60AB0D2BFBD07F00507C3F /* Root */,
+			);
+			path = "Core ";
+			sourceTree = "<group>";
+		};
+		3D60AB0C2BFBCF0D00507C3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D60AB0D2BFBD07F00507C3F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3D60AB0E2BFBD09400507C3F /* ContentViewLogin.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		3D60AB102BFBD0B500507C3F /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				3D60AB132BFBD15600507C3F /* LoginView.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		3D60AB112BFBD10100507C3F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3D60AB122BFBD11000507C3F /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				3DD621C22C01BA1700F0E864 /* ttpapi-424405-79c8257556e2.json */,
+				3D0DF0172BFB91EF00BBE21C /* Module */,
+				3D0DF0152BFB918400BBE21C /* View */,
+				3D0DF0162BFB91BD00BBE21C /* ViewModel */,
+			);
+			path = "Main App";
+			sourceTree = "<group>";
+		};
+		3D7A0FCC2BE3A9E30054ED43 = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FD72BE3A9E30054ED43 /* Diploma_ITStep */,
+				3D7A0FD62BE3A9E30054ED43 /* Products */,
+				3D93BCE62BF4FD9B00AD2DDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D7A0FD62BE3A9E30054ED43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FD52BE3A9E30054ED43 /* Diploma_ITStep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D7A0FD72BE3A9E30054ED43 /* Diploma_ITStep */ = {
+			isa = PBXGroup;
+			children = (
+				3D60AB082BFBCEC400507C3F /* Login */,
+				3D60AB122BFBD11000507C3F /* Main App */,
+				3D7A0FDC2BE3A9E50054ED43 /* Assets.xcassets */,
+				3D7A0FDE2BE3A9E50054ED43 /* Preview Content */,
+			);
+			path = Diploma_ITStep;
+			sourceTree = "<group>";
+		};
+		3D7A0FDE2BE3A9E50054ED43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A0FDF2BE3A9E50054ED43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D93BCE62BF4FD9B00AD2DDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D7A0FD42BE3A9E30054ED43 /* Diploma_ITStep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D7A0FE32BE3A9E50054ED43 /* Build configuration list for PBXNativeTarget "Diploma_ITStep" */;
+			buildPhases = (
+				3D7A0FD12BE3A9E30054ED43 /* Sources */,
+				3D7A0FD22BE3A9E30054ED43 /* Frameworks */,
+				3D7A0FD32BE3A9E30054ED43 /* Resources */,
+				3D93BCEA2BF4FD9B00AD2DDF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diploma_ITStep;
+			packageProductDependencies = (
+				3D93BCE72BF4FD9B00AD2DDF /* RealmSwift */,
+				3D60AAFE2BFBC81800507C3F /* FirebaseAuth */,
+				3D60AB002BFBC81800507C3F /* FirebaseFirestore */,
+				3DD621F02C02939900F0E864 /* Alamofire */,
+			);
+			productName = Diploma_ITStep;
+			productReference = 3D7A0FD52BE3A9E30054ED43 /* Diploma_ITStep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D7A0FCD2BE3A9E30054ED43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					3D7A0FD42BE3A9E30054ED43 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 3D7A0FD02BE3A9E30054ED43 /* Build configuration list for PBXProject "Diploma_ITStep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D7A0FCC2BE3A9E30054ED43;
+			packageReferences = (
+				3D0BE2792BE6D173009C8549 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				3D60AAFD2BFBC81800507C3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3DD621EF2C02939900F0E864 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 3D7A0FD62BE3A9E30054ED43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D7A0FD42BE3A9E30054ED43 /* Diploma_ITStep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D7A0FD32BE3A9E30054ED43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7A0FE02BE3A9E50054ED43 /* Preview Assets.xcassets in Resources */,
+				3DD621C32C01BA1700F0E864 /* ttpapi-424405-79c8257556e2.json in Resources */,
+				3D7A0FDD2BE3A9E50054ED43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D7A0FD12BE3A9E30054ED43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D93BCF02BF4FF3600AD2DDF /* FlashcardStore.swift in Sources */,
+				3D93BCF62BF500C700AD2DDF /* ModuleDetailView.swift in Sources */,
+				3D93BCFC2BF5451300AD2DDF /* QuizView.swift in Sources */,
+				3D0DF03A2BFB982600BBE21C /* FlipCardViewModel.swift in Sources */,
+				3DD621EE2C02935300F0E864 /* ChatBotAI.swift in Sources */,
+				3DD621C52C01CFF100F0E864 /* ChatBotAIView.swift in Sources */,
+				3D60AB0F2BFBD09400507C3F /* ContentViewLogin.swift in Sources */,
+				3D7A0FDB2BE3A9E30054ED43 /* ContentView.swift in Sources */,
+				3D93BCFA2BF5151100AD2DDF /* FlashCardLearningView.swift in Sources */,
+				3D7A0FEB2BE3B06D0054ED43 /* Profile.swift in Sources */,
+				3D7A0FD92BE3A9E30054ED43 /* Diploma_ITStepApp.swift in Sources */,
+				3DD621C12C01B35800F0E864 /* TTP.swift in Sources */,
+				3D93BCF82BF500E500AD2DDF /* NewFlashCardView.swift in Sources */,
+				3D7A0FE92BE3B0610054ED43 /* LearningAlphabet.swift in Sources */,
+				3D93BCEE2BF4FE6100AD2DDF /* RealmModel.swift in Sources */,
+				3D60AB142BFBD15600507C3F /* LoginView.swift in Sources */,
+				3D93BCE22BF4FA9600AD2DDF /* AnkiFlashCards.swift in Sources */,
+				3D93BCF22BF5005700AD2DDF /* ModuleStore.swift in Sources */,
+				3D7A0FF22BE413670054ED43 /* Chapter1_Hello.swift in Sources */,
+				3D93BCF42BF5006E00AD2DDF /* NewModuleView.swift in Sources */,
+				3D7A0FE72BE3B0540054ED43 /* HomeLearning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D7A0FE12BE3A9E50054ED43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D7A0FE22BE3A9E50054ED43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D7A0FE42BE3A9E50054ED43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diploma_ITStep/Preview Content\"";
+				DEVELOPMENT_TEAM = WN2VNXV84T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drdablack.Diploma-ITStep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D7A0FE52BE3A9E50054ED43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diploma_ITStep/Preview Content\"";
+				DEVELOPMENT_TEAM = WN2VNXV84T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drdablack.Diploma-ITStep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D7A0FD02BE3A9E30054ED43 /* Build configuration list for PBXProject "Diploma_ITStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7A0FE12BE3A9E50054ED43 /* Debug */,
+				3D7A0FE22BE3A9E50054ED43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D7A0FE32BE3A9E50054ED43 /* Build configuration list for PBXNativeTarget "Diploma_ITStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7A0FE42BE3A9E50054ED43 /* Debug */,
+				3D7A0FE52BE3A9E50054ED43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D0BE2792BE6D173009C8549 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3D60AAFD2BFBC81800507C3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+		3DD621EF2C02939900F0E864 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D60AAFE2BFBC81800507C3F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D60AAFD2BFBC81800507C3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3D60AB002BFBC81800507C3F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D60AAFD2BFBC81800507C3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3D93BCE72BF4FD9B00AD2DDF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0BE2792BE6D173009C8549 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		3DD621F02C02939900F0E864 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD621EF2C02939900F0E864 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3D7A0FCD2BE3A9E30054ED43 /* Project object */;
+}
